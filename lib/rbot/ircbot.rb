@@ -993,6 +993,7 @@ class Bot
       rescue Exception => e
         error "non-net exception: #{e.pretty_inspect}"
         quit_msg = e.to_s
+        raise
       end
     end
   end
